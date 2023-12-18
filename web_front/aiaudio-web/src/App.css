@@ -1,0 +1,74 @@
+.app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 10px;
+}
+
+.upload-section, .download-section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.upload-section h1, .download-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-link a {
+  color: #1a73e8;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.download-link a:hover {
+  text-decoration: underline;
+}
+
+.processing-message {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+

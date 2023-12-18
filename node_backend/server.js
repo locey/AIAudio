@@ -3,7 +3,11 @@ const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
+const cors = require('cors');
+
 const app = express();
+app.use(cors());
+
 
 // 确保有这些目录
 const uploadDir = 'uploads';
@@ -74,5 +78,5 @@ app.get('/download/:filename', (req, res) => {
 });
 
 // 启动服务器
-const PORT = 3000;
+const PORT = 3001;
 app.listen(PORT, () => console.log(`服务器运行在 http://localhost:${PORT}`));
